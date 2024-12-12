@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Encuesta de Satisfaccion</title>
+    <!-- Enlace a Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Encuesta.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <div id="navbar">
+        <a href="Blog.html">Inicio</a>
+        <a href="/Pagina Web/index.html">Linktree</a>
+    </div>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">Tu(s) Nombre(s)</label>
+          <input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
+      
+          <label for="lname">Apellido(s)</label>
+          <input type="text" id="lname" name="lastname" placeholder="Tu Apellido...">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="argentina">Argentina</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="chile">Chile</option>
+            <option value="peru">Peru</option>
+            <option value="brasil">Brasil</option>
+            <option value="venezuela">Venezuela</option>
+          </select>
+      
+          <label for="subject">Escribe tu opinion del Blog  </label>
+          <textarea id="subject" name="subject" placeholder="Danos tu opinion..." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</body>
+</html>

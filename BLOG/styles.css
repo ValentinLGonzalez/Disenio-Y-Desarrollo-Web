@@ -1,0 +1,166 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url(../Images_Index/Background_Linktree.jpeg)
+}
+
+/* Título principal */
+h1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 2rem; /* Ajusta el tamaño del título */
+    color: #fff;
+    margin: 0;
+}
+
+/* Barra de navegación pegajosa */
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    justify-content: center;
+    padding: 10px 20px; /* Ajustar para pantallas pequeñas */
+    display: flex;      /* Flexbox para alinear enlaces */
+    z-index: 1000;      /* Asegurar que quede sobre el resto del contenido */
+}
+
+/* Enlaces del navbar */
+#navbar a {
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s; /* Suave transición al cambiar de color */
+}
+
+#navbar a:hover {
+    color: #1DA1F2;
+}
+
+/* Encabezado con imagen destacada */
+.titulo-contenedor {
+    background-color: #1DA1F2; /* Fondo gris */
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Contenido principal */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.posts {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.post {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#Blog_tcg {
+    width: 50%; /* Ajustar el ancho al 50% del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin: 0 auto; /* Centramos la imagen horizontalmente */
+    display: block; /* Aseguramos que la imagen se centre correctamente */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+}
+
+.post h2 {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.post p {
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1DA1F2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Barra lateral */
+.sidebar {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #1DA1F2;
+}
+
+/* Pie de página */
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .content {
+        margin: 0px 10px 0px 10px;
+    }
+    body {
+        margin: 0px 10px 0px 10px;
+    }
+    .sidebar {
+        margin: 0px 10px 0px 10px 
+    }
+}

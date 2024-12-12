@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(Images_Index/Background_Linktree.jpeg);
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    color: #ffffff;
+}
+
+/* Foto de perfil */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 3px solid #ffffff;
+}
+
+/* Título y subtítulo */
+h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Enlaces */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los íconos y el texto */
+    padding: 15px;
+    background-color: #1DA1F2;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative; /* Necesario para posicionar el texto en el centro */
+    transition: background-color 0.3s ease;
+}
+
+/* Texto centrado */
+.link-button span {
+    margin: 0 auto; /* Hace que el texto quede centrado */
+}
+
+/* Íconos */
+.link-button i {
+    position: absolute;
+    left: 15px; /* Posiciona el ícono a la izquierda del botón */
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    margin-right: 15px; /* Espacio entre el ícono y el texto */
+}
+
+/* Efecto hover en los botones */
+.link-button:hover {
+    background-color: #0B7ABF;
+}
+
+/* Efecto hover en los íconos */
+.link-button:hover i {
+    transform: scale(1.3);
+}

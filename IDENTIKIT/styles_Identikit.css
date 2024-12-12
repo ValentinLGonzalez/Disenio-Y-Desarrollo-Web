@@ -1,0 +1,292 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0D2622;
+    color: #54BF8D;
+}
+
+/* Estilos del Header */
+header {
+    background-color: #104032;
+    padding: 10px 0;
+    color: #54BF8D;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+header img {
+    max-height: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+/* Estilos para Encabezados (Headings) */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Estilos para Párrafos */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Clase para Centrar Contenido */
+.center {
+    text-align: center;
+}
+
+/* Estilos para Imágenes */
+img {
+    border-radius: 8px;
+    margin: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para Tablas */
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th, table td {
+    padding: 10px;
+}
+
+table th {
+    font-size: 1.2rem;
+    color: #0D2622;
+    background-color: #54BF8D;
+}
+
+table td {
+    font-size: 1rem;
+}
+
+/* Estilos para .tabla-links */
+.tabla-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.tabla-links a {
+    display: inline-block;
+    background-color: #54BF8D;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #0D2622;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    min-width: 200px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabla-links a:hover {
+    background-color: #0D2622;
+    color: #54BF8D;
+    text-decoration: underline;
+}
+
+/* Estilos para la Tierlist */
+.tierlist {
+    width: 60%;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #54BF8D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tierlist th, .tierlist td {
+    padding: 15px;
+    border-bottom: 1px solid #0D2622;
+}
+
+.tierlist th {
+    width: 50px;
+    font-size: 1.5rem;
+    color: #0D2622;
+    border-right: 1px solid #0D2622;
+    text-transform: uppercase;
+}
+
+.tier-s {
+    background-color: #FF6347; /* Rojo tomate para tier S */
+}
+
+.tier-a {
+    background-color: #FFA500; /* Naranja para tier A */
+}
+
+.tier-b {
+    background-color: #FFD700; /* Amarillo para tier B */
+}
+
+.tier-c {
+    background-color: #ADFF2F; /* Verde claro para tier C */
+}
+
+.tierlist td img {
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.tierlist td img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #104032;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Estilos para Listas sin Viñetas */
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.no-bullets li {
+    margin: 10px 0;
+}
+
+/* Estilos para la Página de Multimedia */
+#nav {
+    position: fixed;
+    top: 140px; /* Ajusta según la altura del header */
+    left: 0;
+    bottom: 0;
+    width: 230px;
+    overflow: auto;
+    background-color: #104032;
+}
+
+.nav-div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 9px;
+    text-align: left;
+}
+
+.nav-div h3 {
+    color: #54BF8D;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    padding: 6px 20px;
+    margin: 5px 0;
+    color: #54BF8D;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #54BF8D;
+    color: #0D2622;
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 230px; /* Ancho del nav */
+    padding: 20px;
+    background-color: #0D2622;
+}
+
+.innertube {
+    margin: 15px;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: calc(100% - 100px);
+}
+
+/* Estilos para los Contenedores Individuales */
+.contenedor {
+    flex: 1;
+    max-width: calc(33.333% - 20px);
+    background-color: #104032;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}

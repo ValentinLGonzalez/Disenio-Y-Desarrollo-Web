@@ -1,0 +1,229 @@
+/* F U E N T E S */
+@font-face {
+    font-family: BirdsOfParadise;
+    src: url(../HomeScreenElements/Fonts/BirdsOfParadise.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca_Bold;
+    src: url(../HomeScreenElements/Fonts/LexendDeca/LexendDeca-Bold.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca_Medium;
+    src: url(../HomeScreenElements/Fonts/LexendDeca/LexendDeca-Medium.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca_Regular;
+    src: url(../HomeScreenElements/Fonts/LexendDeca/LexendDeca-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: LexendDeca_Light;
+    src: url(../HomeScreenElements/Fonts/LexendDeca/LexendDeca-Light.ttf);
+}
+
+/* E S T I L O S - D E L - T E X T O */
+h1{
+    color: #0B7ABF;
+    font-family: LexendDeca_Bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: #1DA1F2;
+    font-family: LexendDeca_Medium;
+    text-align: auto;
+}
+
+h3{
+    color: #0B7ABF;
+    font-family: LexendDeca_Regular;
+    text-align: auto;
+    margin: 5px;
+}
+
+p {
+    color: #555;
+    font-family: LexendDeca_Light;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* C O N S T R U C T O R E S */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%; 
+    max-height: 100%; 
+    width: 100%;
+    font-family:Sans-serif;
+    line-height: 1.5em;
+    background-image: url(Images_Index/Background_Linktree.jpeg)
+}
+        
+.innertube {
+    margin: 0px; /* Provides padding for the content */
+}
+
+
+* html main{ 
+    height: 100%; 
+    width: 100%; 
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+/* Barra de navegación */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye los elementos entre el espacio disponible */
+    padding: 0 20px;
+    height: 100%;
+    background-color: #F2F1ED;
+}
+
+/* Contenedor de los enlaces */
+.nav-links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 105px; /* Desplaza todo el grupo de botones 130px desde el borde izquierdo */
+}
+
+/* Estilos para los enlaces */
+.nav-link {
+    display: inline-block;
+    padding: 6px 20px;
+    margin: 0 10px; /* Mantén el mismo margen entre los botones */
+    color: #0B7ABF;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón activo (página actual) */
+.nav-link.active {
+    background-color: #0B7ABF;  
+    color: #585555;            
+    font-weight: bold;      
+}
+
+/* Efecto hover */
+.nav-link:hover {
+    background-color: #1DA1F2;  
+    cursor: pointer;
+}
+
+/* Estilo para el botón "Atrás" */
+.nav-link-back {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    margin-right: 115px;
+    background-color: #585555;
+    color: #0B7ABF;
+    text-decoration: none;
+    border-radius: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Icono de la flecha */
+.nav-link-back-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 0px;
+}
+
+.nav-link-back:hover {
+    background-color: #1DA1F2;    
+    cursor: pointer;              
+}
+
+/* BLOQUE DE TEXTO */
+.contenedor {
+    display: flex;
+    flex-direction: column; /* Colocar imagen arriba del texto */
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    align-items: center;
+    text-align: left;
+}
+
+.contenedor img {
+    width: 55px;
+    padding: 15px;
+    margin-bottom: 20px;
+    height: auto;
+    background-color: #E3E2DF;
+    border-radius: 20px;
+}
+
+/* Botón de Opción */
+.contenedor-botones {
+    display: flex;
+    justify-content: center; /* Alinea los botones en el centro */
+    margin-top: 20px; /* Espacio entre el párrafo y los botones */
+    margin-bottom: 20px;
+}
+
+.contenedor-boton {
+    width: 175px;
+    height: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0B7ABF; 
+    border-radius: 50px;
+    text-align: center;
+    margin: 0 20px;
+    transition: 0.5s ease;
+}
+
+#back-link {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.contenedor-botondebil {
+    width: 175px;
+    height: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E3E2DF;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0 20px;
+    transition: 0.5s ease;
+}
+
+#random-link {
+    font-weight: bold;
+    color: #0B7ABF;
+    text-decoration: none;
+}
+
+.contenedor-boton:hover {
+    background-color: #1DA1F2; 
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.contenedor-botondebil:hover {
+    background-color: #E3AFBC; 
+    border-radius: 12px;
+    cursor: pointer;
+}
